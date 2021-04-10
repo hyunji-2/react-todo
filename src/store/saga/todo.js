@@ -3,7 +3,7 @@ import { all, fork, call, put, takeLatest } from 'redux-saga/effects';
 import { GET_TODO_REQUEST, getTodoSuccese, getTodoFailure } from './../reducer/list';
 
 function getTodoAPI() {
-    return axios.get('http://127.0.0.1:8000/api/todo');
+    return axios.get('https://todos-h.herokuapp.com/api/todo');
 }
 
 function* workGetTodo(){
